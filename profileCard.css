@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+/*---Variables*/
+:root {
+  --Darkcyan: hsl(185, 75%, 39%);
+  --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --DarkGrayishBlue: hsl(227, 10%, 46%);
+  --DarkGray: hsl(0, 0%, 59%); 
+}
+
+
+/*----Body----*/
+
+body {
+background-color: var(--Darkcyan);
+font-size: 18px;
+background-image: url("bg-pattern-top.svg"), url("bg-pattern-bottom.svg");
+background-repeat: no-repeat;
+background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+}
+
+.mainContainer {
+  width: 330px;
+  height: 380px;
+  margin: 170px auto 50px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+}
+
+.bubbles {
+  background-image: url(bg-pattern-card.svg);
+  height: 140px;
+}
+
+.photo {
+  position: absolute;
+  top: 85px;
+  left: 35%;
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+}
+
+.profileData {
+  background-color: white;
+  height: 140px;
+  padding: 75px;
+  text-align: center;
+}
+
+.name {
+  color: var(--VeryDarkDesaturatedBlue);
+  font-weight: 700;
+}
+
+.age, .country {
+  font-weight: 400;
+  color: var(--DarkGrayishBlue);
+}
+
+.statsData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 30px 35px;
+  text-align: center;
+  background-color: white;
+  border-top: 0.2px solid var(--DarkGrayishBlue);
+}
+
+.data {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--VeryDarkDesaturatedBlue);
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--DarkGrayishBlue);
+}
+
+/**---footer---*/
+  .attribution {
+    font-size: 11px; 
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%); 
+  }
+
+  /*Media Queries*/
+
+  @media only screen and (min-width: 1400px) {
+    .mainContainer {
+      width: 350px;
+    }
+  }
